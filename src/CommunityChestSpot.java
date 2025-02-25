@@ -15,4 +15,7 @@ public class CommunityChestSpot {
         return position + ": " + name + " (" + type + ")";
     }
 
+
+
+
 }
