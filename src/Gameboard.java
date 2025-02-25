@@ -23,17 +23,37 @@ public class Gameboard {
         int price;
         int rent;
         String colorGroup;
+        String owner;
+        int houses;
+        boolean hasHotel;
 
         public Property(String name, int position, int price, int rent, String colorGroup) {
             super(name, position, "Property");
             this.price = price;
             this.rent = rent;
             this.colorGroup = colorGroup;
+            this.owner = "None";  // No owner initially
+            this.houses = 0;
+            this.hasHotel = false;
+        }
+        public void setOwner(String newOwner) {
+            this.owner = newOwner;
         }
 
+        public void addHouse() {
+            if (houses < 4 && !hasHotel) {
+                houses++;
+            } else if (houses == 4) {
+                houses = 0;
+                hasHotel = true;
+            } else {
+                System.out.println(name + " already has a hotel!");
+            }
+        }
         @Override
         public String toString() {
-            return super.toString() + " - Price: $" + price + ", Rent: $" + rent + ", Color: " + colorGroup;
+            return super.toString() + " - Price: $" + price + ", Rent: $" + rent + ", Color: " + colorGroup +
+                    ", Owner: " + owner + ", Houses: " + houses + ", Hotel: " + (hasHotel ? "Yes" : "No");
         }
     }
 
@@ -93,9 +113,44 @@ public class Gameboard {
         }
     }
 
+    public void buyProperty(int position, String playerName) {
+        if (spaces.get(position) instanceof Property) {
+            Property prop = (Property) spaces.get(position);
+            if (prop.owner.equals("None")) {
+                prop.setOwner(playerName);
+                System.out.println(playerName + " bought " + prop.name);
+            } else {
+                System.out.println(prop.name + " is already owned by " + prop.owner);
+            }
+        } else {
+            System.out.println("This space is not a property.");
+        }
+    }
+
+    public void upgradeProperty(int position) {
+        if (spaces.get(position) instanceof Property) {
+            Property prop = (Property) spaces.get(position);
+            prop.addHouse();
+            System.out.println("Upgraded " + prop.name + " to " + prop.houses + " houses, Hotel: " + (prop.hasHotel ? "Yes" : "No"));
+        } else {
+            System.out.println("This space is not a property.");
+        }
+    }
+
     public static void main(String[] args) {
         Gameboard board = new Gameboard();
         board.printBoard();
+
+        // Simulating purchases and upgrades
+        board.buyProperty(1, "Alice");
+        board.buyProperty(3, "Bob");
+        board.upgradeProperty(1);
+        board.upgradeProperty(1);
+        board.upgradeProperty(1);
+        board.upgradeProperty(1);
+        board.upgradeProperty(1); // Should convert to a hotel
+
+        board.printBoard(); // Check updated board state
     }
 }
 
