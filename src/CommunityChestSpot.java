@@ -16,6 +16,9 @@ public class CommunityChestSpot {
         // which can result in either receiving money, paying money to the bank,
         // or being instructed to move to a different space on the board
 
+
+
+
     }
 
     @Override
