@@ -28,9 +28,18 @@ public class ChanceCards {
         chanceCards.put("Card4", "Advance to St. Charles Place. If you pass Go, collect $200.");
         chanceCards.put("Card5", "Advance to the nearest Railroad and pay the owner twice the rental to which he/she is otherwise entitled. If Railroad is unowned, you may buy it from the Bank.");
         chanceCards.put("Card6", "Advance to the nearest Utility. If unowned, you may buy it from the Bank. If owned, throw dice and pay owner a total ten times the amount thrown.");
+        chanceCards.put("Card7", "Bank pays you dividend of $50.");
+        chanceCards.put("Card8", "Get out of Jail Free. This card may be kept until needed, or traded/sold.");
+        chanceCards.put("Card9", "Go back three spaces.");
+        chanceCards.put("Card10", "Go to Jail. Go directly to Jail. Do not pass Go. Do not collect $200.");
+        chanceCards.put("Card11", "Make general repairs on all your property. For each house pay $25. For each hotel $100.");
+        chanceCards.put("Card12", "Pay poor tax of $15.");
+        chanceCards.put("Card13", "Take a trip to Reading Railroad. If you pass Go, collect $200.");
+        chanceCards.put("Card14", "Take a walk on the Boardwalk. Advance token to Boardwalk.");
+        chanceCards.put("Card15", "You have been elected Chairman of the Board. Pay each player $50.");
+        chanceCards.put("Card16", "Your building and loan matures. Collect $150.");
+
     }
-
-
 
 }
 
