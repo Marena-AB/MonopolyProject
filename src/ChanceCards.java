@@ -28,6 +28,12 @@ public class ChanceCards {
         chanceCards.put("Card4", "Advance to St. Charles Place. If you pass Go, collect $200.");
         chanceCards.put("Card5", "Advance to the nearest Railroad and pay the owner twice the rental to which he/she is otherwise entitled. If Railroad is unowned, you may buy it from the Bank.");
         chanceCards.put("Card6", "Advance to the nearest Utility. If unowned, you may buy it from the Bank. If owned, throw dice and pay owner a total ten times the amount thrown.");
+        chanceCards.put("Card7", "Advance token to the nearest Utility. If unowned, you may buy it from the Bank. If owned, throw dice and pay owner a total ten times the amount thrown.");
+        chanceCards.put("Card8", "Bank pays you dividend of $50.");
+        chanceCards.put("Card9", "Get out of Jail Free.");
+        chanceCards.put("Card10", "Go Back 3 Spaces.");
+        chanceCards.put("Card11", "Go to jail. Go directly to jail. Do not pass Go, Do not collect $200.");
+
     }
 
 
