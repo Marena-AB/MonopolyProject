@@ -26,7 +26,7 @@ public class Gameboard {
         String owner;
         int houses;
         boolean hasHotel;
-
+        // these three public methods need a new place to be put.
         public Property(String name, int position, int price, int rent, String colorGroup) {
             super(name, position, "Property");
             this.price = price;
@@ -113,6 +113,7 @@ public class Gameboard {
         }
     }
 
+    // we need to find a new place to put these two methods.
     public void buyProperty(int position, String playerName) {
         if (spaces.get(position) instanceof Property) {
             Property prop = (Property) spaces.get(position);
