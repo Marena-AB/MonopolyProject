@@ -1,9 +1,6 @@
 import java.util.Map;
 
 public class CommunityChestCards {
-    /*
-    This class is a placeholder for the CommunityChestCards that will be drawn by players
-    */
 
     private Map<String, String> communityChestCards;
 
@@ -19,7 +16,7 @@ public class CommunityChestCards {
         this.communityChestCards = communityChestCards;
     }
 
-    // cards deck, work in progress
+
     public void cards() {
         communityChestCards.put("Card1", "Advance to Go (Collect $200).");
         communityChestCards.put("Card2", "Bank error in your favor. Collect $200.");
