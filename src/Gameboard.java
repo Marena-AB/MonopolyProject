@@ -2,22 +2,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Gameboard {
-    private static class Space {
-        String name;
-        int position;
-        String type;
-
-        public Space(String name, int position, String type) {
-            this.name = name;
-            this.position = position;
-            this.type = type;
-        }
-
-        @Override
-        public String toString() {
-            return position + ": " + name + " (" + type + ")";
-        }
-    }
 
     private static class Property extends Space {
         int price;
