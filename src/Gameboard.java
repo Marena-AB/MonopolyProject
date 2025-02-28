@@ -63,31 +63,6 @@ public class Gameboard {
         }
     }
 
-    // we need to find a new place to put these two methods.
-    public void buyProperty(int position, String playerName) {
-        if (spaces.get(position) instanceof Property) {
-            Property prop = (Property) spaces.get(position);
-            if (prop.owner.equals("None")) {
-                prop.setOwner(playerName);
-                System.out.println(playerName + " bought " + prop.name);
-            } else {
-                System.out.println(prop.name + " is already owned by " + prop.owner);
-            }
-        } else {
-            System.out.println("This space is not a property.");
-        }
-    }
-
-    public void upgradeProperty(int position) {
-        if (spaces.get(position) instanceof Property) {
-            Property prop = (Property) spaces.get(position);
-            prop.addHouse();
-            System.out.println("Upgraded " + prop.name + " to " + prop.houses + " houses, Hotel: " + (prop.hasHotel ? "Yes" : "No"));
-        } else {
-            System.out.println("This space is not a property.");
-        }
-    }
-
     public static void main(String[] args) {
         Gameboard board = new Gameboard();
         board.printBoard();
