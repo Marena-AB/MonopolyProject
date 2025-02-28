@@ -20,6 +20,10 @@ public class Property extends Space {
         this.owner = owner;
     }
 
+    public String getName(){
+        return name;
+    }
+
     public int getPrice() {
         return price;
     }

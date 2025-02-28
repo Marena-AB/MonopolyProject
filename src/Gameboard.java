@@ -66,17 +66,6 @@ public class Gameboard {
     public static void main(String[] args) {
         Gameboard board = new Gameboard();
         board.printBoard();
-
-        // Simulating purchases and upgrades
-        board.buyProperty(1, "Alice");
-        board.buyProperty(3, "Bob");
-        board.upgradeProperty(1);
-        board.upgradeProperty(1);
-        board.upgradeProperty(1);
-        board.upgradeProperty(1);
-        board.upgradeProperty(1); // Should convert to a hotel
-
-        board.printBoard(); // Check updated board state
     }
 }
 
