@@ -26,11 +26,11 @@ public class Player {
 
     public void payRent(Player owner, int amount){
         money -= amount;
-        owner.recieveRent(amount);
+        owner.receiveRent(amount);
         System.out.println(name + " paid $" + amount + " rent to " + owner.getName());
     }
 
-    public void recieveRent(int amount){
+    public void receiveRent(int amount){
         money += amount;
     }
 
