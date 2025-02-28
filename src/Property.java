@@ -20,6 +20,10 @@ public class Property extends Space {
         this.owner = owner;
     }
 
+    public int getPrice() {
+        return price;
+    }
+
     public void addHouse() {
         if (houses < 4 && !hasHotel) {
             houses++;
