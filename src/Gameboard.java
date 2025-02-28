@@ -3,43 +3,7 @@ import java.util.List;
 
 public class Gameboard {
 
-    private static class Property extends Space {
-        int price;
-        int rent;
-        String colorGroup;
-        String owner;
-        int houses;
-        boolean hasHotel;
-        // these three public methods need a new place to be put.
-        public Property(String name, int position, int price, int rent, String colorGroup) {
-            super(name, position, "Property");
-            this.price = price;
-            this.rent = rent;
-            this.colorGroup = colorGroup;
-            this.owner = "None";  // No owner initially
-            this.houses = 0;
-            this.hasHotel = false;
-        }
-        public void setOwner(String newOwner) {
-            this.owner = newOwner;
-        }
 
-        public void addHouse() {
-            if (houses < 4 && !hasHotel) {
-                houses++;
-            } else if (houses == 4) {
-                houses = 0;
-                hasHotel = true;
-            } else {
-                System.out.println(name + " already has a hotel!");
-            }
-        }
-        @Override
-        public String toString() {
-            return super.toString() + " - Price: $" + price + ", Rent: $" + rent + ", Color: " + colorGroup +
-                    ", Owner: " + owner + ", Houses: " + houses + ", Hotel: " + (hasHotel ? "Yes" : "No");
-        }
-    }
 
     private List<Space> spaces;
 
