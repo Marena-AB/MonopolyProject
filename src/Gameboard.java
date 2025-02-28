@@ -3,8 +3,6 @@ import java.util.List;
 
 public class Gameboard {
 
-
-
     private List<Space> spaces;
 
     public Gameboard() {
