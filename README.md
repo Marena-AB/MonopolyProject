@@ -9,7 +9,7 @@ Monopoly Game is a digital version of the classic board game where players aim t
 - Tatiana Curtis  
 - Aiden Clare
 
-##UML
+## UML
 
  <img width="849" alt="Screenshot 2025-03-11 at 9 06 29 AM" src="https://github.com/user-attachments/assets/0fcb8b00-508d-4bcd-8f35-0bf7dc14fc40" />
 
