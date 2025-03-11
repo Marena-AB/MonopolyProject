@@ -1,7 +1,7 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-public class communityCardsTest {
+public class CommunityCardsTest {
     CommunityChestCards communityCard = new CommunityChestCards();
 
     // Test if the community card is created correctly
