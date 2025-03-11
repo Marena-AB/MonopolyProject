@@ -3,8 +3,7 @@ import java.util.ArrayList;
 public class Tokens {
 
     public static final String[] TOKENS = {
-            "Battleship", "Boot", "Cat", "Duck", "Hat", "Penguin",
-            "RaceCar", "Scottie Dog", "T-Rex", "Top Hat", "Tractor", "Wheelbarrow"
+            "Top Hat", "Thimble", "Iron", "Boot", "Battleship", "Cannon", "Race Car","Scottie Dog", "Wheelbarrow"
     };
 
     private static ArrayList<String> availableTokens = new ArrayList<>();
