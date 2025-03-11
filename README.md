@@ -28,11 +28,8 @@ Follow these steps to install and run the Monopoly game on your local machine:
     ```
 
 3. **Run the game:**
-    - After installation, start the game by running the main file:
+    - After installation, start the game by running the main file (This game is written in java code):
       ```bash
       java Gameboard.java
       ```
-    - Or, if you are using another language (for example, JavaScript/Node.js), replace with:
-      ```bash
-      node Gameboard.js
-      ```
+ 
