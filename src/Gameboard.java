@@ -3,7 +3,9 @@ import java.util.List;
 import java.util.Map;
 
 public class Gameboard {
-
+/* this class represents the gameboard for the Monopoly game.
+It has a list of spaces that represent the different spaces on the board.
+ */
     private List<Space> spaces;
 
     public Gameboard() {
