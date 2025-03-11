@@ -69,4 +69,8 @@ public class Player {
         }
         return false;
     }
+
+    public int getBalance() {
+        return money;
+    }
 }

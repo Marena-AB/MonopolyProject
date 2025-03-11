@@ -55,4 +55,24 @@ public class Property extends Space {
         return super.toString() + " - Price: $" + price + ", Rent: $" + rent + ", Color: " + colorGroup +
                 ", Owner: " + owner + ", Houses: " + houses + ", Hotel: " + (hasHotel ? "Yes" : "No");
     }
+
+    public boolean hasHotel() {
+        return hasHotel;
+    }
+
+    public int getHouses() {
+        return houses;
+    }
+
+    public void setHouses(int houses) {
+        this.houses = houses;
+    }
+
+    public int getRent() {
+        return rent;
+    }
+
+    public void setRent(int rent) {
+        this.rent = rent;
+    }
 }
