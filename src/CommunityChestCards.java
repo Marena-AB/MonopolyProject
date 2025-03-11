@@ -1,18 +1,27 @@
-import java.util.Map;
+import java.util.*;
 
-public class CommunityChestCards {
+/*
+    * This class represents the Community Chest Cards for the Monopoly game.
+    * It implements the ChestAndCardSpot interface.
+    * The class has a map of the cards and a randomizer to shuffle the cards.
+ */
+
+
+
+public class CommunityChestCards implements ChestAndCardSpot {
+
 
     private Map<String, String> communityChestCards;
 
-    public CommunityChestCards(Map<String, String> chanceCards) {
-        this.communityChestCards = chanceCards;
+    public CommunityChestCards() {
+        this.communityChestCards = new HashMap<>();
     }
 
     public Map<String, String> getCommunityChestCards() {
         return this.communityChestCards;
     }
 
-    public void setCommunityChestCards(Map<String, String> chanceCards) {
+    public void setCommunityChestCards(Map<String, String> communityChestCards) {
         this.communityChestCards = communityChestCards;
     }
 
@@ -34,5 +43,13 @@ public class CommunityChestCards {
         communityChestCards.put("Card14", "You are assessed for street repairs. $40 per house. $115 per hotel.");
         communityChestCards.put("Card15", "You have won second prize in a beauty contest. Collect $10.");
         communityChestCards.put("Card16", "You inherit $100.");
+    }
+
+    public String shuffleCards() {
+        Random rand = new Random();
+        List<String> cards = new ArrayList<>(communityChestCards.keySet());
+        String randomCard = cards.get(rand.nextInt(cards.size()));
+
+        return communityChestCards.get(randomCard);
     }
 }
