@@ -3,7 +3,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class GameboardTest {
-
+/*this is a test class for the Gameboard class. It tests the methods in the
+Gameboard class to ensure that they work as expected.*/
     private Gameboard gameboard;
     private Player player1;
     private Player player2;
