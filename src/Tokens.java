@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 
 public class Tokens {
+    /*
+        * This class represents the tokens for the Monopoly game.
+        * It has a list of available tokens and assigns a random token to a player.
+     */
 
     public static final String[] TOKENS = {
             "Top Hat", "Thimble", "Iron", "Boot", "Battleship", "Cannon", "Race Car","Scottie Dog", "Wheelbarrow"
