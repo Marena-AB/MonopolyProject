@@ -1,8 +1,10 @@
+/* Unit tests for the Die class. */
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class DieTest {
+    // Test that the die rolls within the correct range (1-6)
     @Test
     public void testRollWithinRange(){
         Die die = new Die(6);
@@ -13,6 +15,7 @@ public class DieTest {
         }
     }
 
+    // Test that the die returns the correct value
     @Test
     public void testGetDieValue(){
         Die die = new Die(6);

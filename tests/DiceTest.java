@@ -1,7 +1,9 @@
+/* Unit test for the Dice class */
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class DiceTest {
+    // Test that rolling the dice returns a value between 2 and 12
     @Test
     public void testRollWithinRange(){
         Dice dice = new Dice();
@@ -13,6 +15,7 @@ public class DiceTest {
         }
     }
 
+    // Tests that rolling doubles increments the consecutiveDoubles counter and resets the counter
     @Test
     public void testRollingDoubles(){
         Die die1 = new Die(6) {
