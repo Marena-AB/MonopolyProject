@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Gameboard {
 
@@ -72,6 +73,14 @@ public class Gameboard {
         System.out.println(board.getspace(10));
         System.out.println(board.getspace(20));
         System.out.println(board.getspace(30));
+    }
+
+    public List<Space> getSpaces() {
+        return spaces;
+    }
+
+    public void setSpaces(List<Space> spaces) {
+        this.spaces = spaces;
     }
 }
 
