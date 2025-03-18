@@ -22,5 +22,11 @@ public class Main {
     Player player2 = new Player("Player 2");
     System.out.println("Player 1: " + player1);
     System.out.println("Player 2: " + player2);
+    System.out.println ("Player 1: " + player1.getTokens());
+
+    // Move player 1 to space 10
+    player1.setPosition(10);
+    System.out.println("Player 1: " + player1.getTokens());
+
   }
 }

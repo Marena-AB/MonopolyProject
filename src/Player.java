@@ -73,4 +73,8 @@ public class Player {
     public int getBalance() {
         return money;
     }
+
+    public String getTokens() {
+        return name + " has $" + money + " and is on space " + position;
+    }
 }
