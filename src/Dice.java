@@ -52,4 +52,8 @@ public class Dice {
     public void resetConsecutiveDoubles() {
         consecutiveDoubles = 0;
     }
+
+    public int roll() {
+        return rollDice();
+    }
 }

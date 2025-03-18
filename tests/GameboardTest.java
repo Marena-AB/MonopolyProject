@@ -142,7 +142,8 @@ Gameboard class to ensure that they work as expected.*/
         property.addHouse();
 
         String expected = "1: Mediterranean Avenue (Property) - Price: $60, Rent: $2, Color: Brown, " +
-                "Owner: Player@3c72f59f, Houses: 1, Hotel: No";
+                "Owner: Player1, Houses: 1, Hotel: No";
         assertEquals(expected, property.toString());
     }
+
 }
